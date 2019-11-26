@@ -9,6 +9,7 @@ object p02 extends App {
     Example:
       scala> penultimate(List(1, 1, 2, 3, 5, 8))
       res0: Int = 5
+
  */
 
   val myList: List[Int] = List(1, 1, 2, 3, 5, 8)
