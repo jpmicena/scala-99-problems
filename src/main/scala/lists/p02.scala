@@ -1,4 +1,6 @@
-import scala.annotation._
+package lists
+
+import scala.annotation.tailrec
 
 object p02 extends App {
 
