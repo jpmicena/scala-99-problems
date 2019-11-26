@@ -15,6 +15,7 @@ object p03 extends App {
 
   val myList: List[Int] = List(1, 1, 2, 3, 5, 8)
 
+  @tailrec
   def nth[A](n: Int, l: List[A]): A = (n, l) match {
     case (0, h :: _)    => h
     case (n, _ :: tail) => nth(n - 1, tail)
