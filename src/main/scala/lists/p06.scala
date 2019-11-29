@@ -3,7 +3,7 @@ package lists
 object p06 extends App {
 
   /*
-    PROBLEM 05
+    PROBLEM 06
 
     (*) Find out whether a list is a palindrome.
     Example:
