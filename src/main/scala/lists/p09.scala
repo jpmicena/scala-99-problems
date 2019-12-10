@@ -15,7 +15,12 @@ object p09 extends App {
 
   val myList = List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e")
 
-  def pack[A](l: List[A]): List[List[A]] = l.distinct.foldLeft(List.empty[List[A]]) { (ls, e) =>
+  /*
+    I understood the problem incorrectly the first time so I came up with this solution, The problem is that
+    This function achieves the first line of the problem but not the second one.
+   */
+  
+  def packIncorrect[A](l: List[A]): List[List[A]] = l.distinct.foldLeft(List.empty[List[A]]) { (ls, e) =>
     ls :+ l.filter(x => x == e)
   }
 
@@ -28,7 +33,8 @@ object p09 extends App {
     }
   }
 
-  println(pack(myList))
+  println(packIncorrect(myList))
+
   println(packRecursive(myList))
 
 }
