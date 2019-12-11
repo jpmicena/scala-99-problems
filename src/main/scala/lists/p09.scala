@@ -25,11 +25,10 @@ object p09 extends App {
   }
 
   def packRecursive[A](l: List[A]): List[List[A]] = {
-    if (l.isEmpty) List(List())
+    if (l.isEmpty) Nil
     else {
       val (packed, next) = l span { _ == l.head }
-      if (next == Nil) List(packed)
-      else packed :: packRecursive(next)
+      packed :: packRecursive(next)
     }
   }
 
