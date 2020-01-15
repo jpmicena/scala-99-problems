@@ -1,4 +1,6 @@
 # Idea and Scala
 /.idea/
+/.metals/
+/.bloop/
 /project/
 /target/
