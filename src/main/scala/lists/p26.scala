@@ -1,6 +1,5 @@
 package lists
 
-import java.time.Instant
 
 object p26 extends App {
 
@@ -35,7 +34,4 @@ object p26 extends App {
       }
 
   println(combinations(3, myList).length)
-
-  val t: Instant = Instant.now()
-
 }
