@@ -4,7 +4,7 @@ package lists
 object p26 extends App {
 
   /*
-  PROBLEM 25
+  PROBLEM 26
 
     (**) Generate the combinations of K distinct objects chosen from the N elements of a list.
 
